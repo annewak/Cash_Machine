@@ -16,7 +16,7 @@ class Cashmachine:
             return f"You have withdrawn: ${amount:.2f}"
     def view_transaction_history(self):
         return "\n".join(self.transactions)
-        if self.transactions == None:
+        if not self.transactions:
             return "No transactions made yet."
             
 
